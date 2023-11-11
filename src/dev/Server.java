@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Server {
     public static void main(String[] args) throws IOException {
-        ServerSocket serverSocket = new ServerSocket(12345);
+        ServerSocket serverSocket = new ServerSocket(1234);
         System.out.println("Serveur en attente de connexion...");
 
         // Générer un nombre aléatoire entre 1 et 100 inclus
