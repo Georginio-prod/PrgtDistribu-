@@ -9,10 +9,11 @@ public class Client {
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Adresse IP du serveur : ");
-        String serverAddress = scanner.nextLine();
+      //  System.out.print("Adresse IP du serveur : ");
+       // String serverAddress = scanner.nextLine();
+       // Socket socket = new Socket(serverAddress, 12345);
 
-        Socket socket = new Socket(serverAddress, 12345);
+        Socket socket = new Socket("localhost", 12345);
         Scanner serverInput = new Scanner(socket.getInputStream());
         PrintWriter clientOutput = new PrintWriter(socket.getOutputStream(), true);
 
